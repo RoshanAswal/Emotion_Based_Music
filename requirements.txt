@@ -1,4 +1,3 @@
-python==2.8
 absl-py==1.1.0
 astunparse==1.6.3
 cachetools==4.2.4
