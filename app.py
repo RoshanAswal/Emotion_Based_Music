@@ -1,6 +1,9 @@
 from crypt import methods
 from fileinput import filename
 from flask import Flask, redirect,render_template,request,flash
+!pip install opencv-python
+!apt update && apt install -y libsm6 libxext6
+!apt-get install -y libxrender-dev
 import cv2
 import face_recognition
 import time
