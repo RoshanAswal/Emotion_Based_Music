@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Emotion Based Music Player</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <script type="text/javascript">
+            function do_some(){
+                alert("Please look into the camera")
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="color:orange">Emotion Based Music Player</temp></h1>
+        <hr><br>
+        <!-- <img src=""> -->
+        <form action="predict" method="post">
+            <p class="p1">This is a machine learning project
+                Here you can get the recommendation of music based
+                on your facial emotion or the photo you upload
+                <br><br>Excited? Let's Try
+            </p>
+
+            <div class="first">
+                <h2><u style="color:skyblue; font-size: 1.5rem;">Info for better recommendation</u></h2>
+                <h2>Language</h2>
+                <select width="300" name="lang" class="lang">
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                </select>
+                <h2>Age</h2>
+                <select width="300" name="age" class="age">
+                    <option value="0-12">0-12</option>
+                    <option value="13-40">13-40</option>
+                    <option value="40-above">40-above</option>
+                </select>
+
+                <h2>Singer</h2>
+                <input type="input" name="singer" autocomplete="off"><br>
+                <h2>Click to Take a photo</h2>
+                <input type="submit" class="submit" value="click me" name="camera" onclick="do_some()"><br>
+            </div>
+            <h2 style="color:skyblue">{{message}}</h2>
+            {% if show==True %}
+                <img src="/static/uploads/image.png" alt=""><br>
+                <br>
+                <a href={{song_link}}>Your song</a>
+                <br>
+            {% endif %}
+
+
+
+        </form>
+    </body>
+</html>
