@@ -57,4 +57,3 @@ urllib3==1.26.10
 Werkzeug==2.1.2
 wrapt==1.14.1
 zipp==3.8.1
-https://github.com/explosion/spacy-models/releases/download/en_core_web_trf-3.0.0a0/en_core_web_trf-3.0.0a0.tar.gz
