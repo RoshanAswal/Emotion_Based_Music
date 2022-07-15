@@ -9,7 +9,7 @@ import keras
 import matplotlib.pyplot as plt
 
 upload_folder='static/uploads/image.png'
-model=keras.models.load_model("model1.h5")
+model=keras.models.load_model("/app/model1.h5")
 app=Flask(__name__)
 app.secret_key="asdfghkl;"
 # app.config['UPLOAD_FOLDER']=upload_folder
